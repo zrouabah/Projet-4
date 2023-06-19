@@ -1,0 +1,131 @@
+
+  body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  header{
+    font-family:'Shrikhand', cursive;
+    font-size:xx-large;
+    text-align: center;
+    box-shadow: 0 0 0.5rem grey;
+    padding: 20px;
+    position: relative;
+    
+  }
+  /* Nav */
+  main .ville{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+  }
+  main .ville i {
+    font-size: 20px;
+  }
+  /* Explorer */
+  .Explorer{
+    text-align: center;
+  }
+  .Explorer h2 {
+    font-size: 1.5rem;
+    margin-top: 40px;
+  }
+  .Explorer p {
+    font-size: 1rem;
+  }
+  .Explorer button{
+    color:white;
+    background:linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    border-radius: 25px;
+    align-items: center;
+    height: 50px;
+    top: 50px;
+    font-size: 15px;
+  }
+
+  /* Fonctionnement */
+  ol.Fonctionnement{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px
+
+  }
+ li  {
+    background-color: #F6F6F6;
+    padding: 20px;
+    border-radius: 20px;
+    flex-grow: 1;
+    position: relative;
+ }
+ol{
+    list-style-type: none;
+    counter-reset: compteur;
+  }
+  ol li{
+    counter-increment: compteur;
+  }
+  ol li::before{
+    margin-right: 1rem;
+    content: "" counter(compteur);
+    color: white;
+    background: #9356DC;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 15px;
+    left: -16px;
+
+  }
+.Fonctionnement i{
+    margin-right: 6px;
+}
+
+/* Mdiaqueries */
+ @media (max-width:768px) {
+    ol .Fonctionnement{
+        flex-direction: column;
+    }
+    .menu-cards{
+      grid-template-columns: repeat(1, 1fr);
+    }
+ }
+
+.menu-cards img{
+   background-size: cover;
+    width: 500px;
+    height: 231px;
+    border-radius: 15px 15px 0 0;
+}
+ .menu-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   gap:20px;
+}
+
+   
+.menus{
+  background-color: #F6F6F6;
+}
+.menus h2{
+  margin-bottom: 30px;
+  padding: 20px 0;
+  margin: 0;
+}
+.menus  .card{
+  border: 1px solid red;
+  height: 500px;
+  flex-grow: 20px;
+  min-width: 500px;
+}
+
+
+ 
