@@ -3,7 +3,9 @@
     margin: 0px;
     font-family: 'Roboto', sans-serif;
   }
-
+  /* main{
+    padding: 0 100px;
+  } */
   header{
     font-family:'Shrikhand', cursive;
     font-size:xx-large;
@@ -94,38 +96,92 @@ ol{
     ol .Fonctionnement{
         flex-direction: column;
     }
-    .menu-cards{
-      grid-template-columns: repeat(1, 1fr);
+    .menu-cards {
+     flex-direction: column;
+     width: 100%;
+    }
+    .menu-cards .card {
+      width: 95%;
+    }
+    .menus {
+      padding: 10px;
+      width: 100%;
+    }
+  
+   .card{
+    width: 100%;
+   }
+    .card-info i{
+      display: flex;
     }
  }
-
-.menu-cards img{
-   background-size: cover;
-    width: 500px;
-    height: 231px;
-    border-radius: 15px 15px 0 0;
-}
- .menu-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-   gap:20px;
-}
-
-   
+/*************** menus************/
 .menus{
   background-color: #F6F6F6;
+  justify-content: center;
+  align-items: center;
 }
+ .menu-cards {
+  display:flex;
+  flex-wrap: wrap;
+  gap:30px;
+  justify-content: center;
+}
+.menus .menu-cards .cardNouveau {
+  position: relative;
+}
+.menus .menu-cards .cardNouveau::before {
+  content: "Nouveau";
+  height: 23px;
+  width: 75px;
+  background-color:#99E2D0;
+  color: #008766;
+  position: absolute;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 400px;
+}
+.menus img {
+   object-fit: cover;
+   background-size: cover;
+    height: 231px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.card-info{
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+a{
+  text-decoration: none;
+}
+.card-info i{
+  position: absolute;
+  margin-left: 450px;
+}
+.card-info h3,p {
+  margin: 5px;
+}
+.card-info p{
+
+}
+  .card{
+  height: 315px;
+  flex-grow: 20px;
+  width: 500px;
+box-shadow: 0px 4px 15px 0px #0000001A;
+border-radius: 15px;
+/* flex-grow: 1; */
+
+}  
 .menus h2{
   margin-bottom: 30px;
   padding: 20px 0;
   margin: 0;
+  align-items: center;
 }
-.menus  .card{
-  border: 1px solid red;
-  height: 500px;
-  flex-grow: 20px;
-  min-width: 500px;
-}
+
 
 
  
