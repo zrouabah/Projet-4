@@ -98,7 +98,6 @@ ol{
     }
     .menu-cards {
      flex-direction: column;
-     width: 100%;
     }
     .menu-cards .card {
       width: 95%;
@@ -113,6 +112,14 @@ ol{
    }
     .card-info i{
       display: flex;
+    }
+    footer{
+      display: flex;
+      flex-direction: column;
+      height: 189px;
+      height: 186px;      
+      padding: 22px 25px 22px 25px;
+
     }
  }
 /*************** menus************/
@@ -139,7 +146,7 @@ ol{
   position: absolute;
   text-align: center;
   margin-top: 10px;
-  margin-left: 400px;
+  right: 50px;
 }
 .menus img {
    object-fit: cover;
@@ -152,29 +159,44 @@ ol{
   text-decoration: none;
   color: black;
   position: relative;
+
 }
 a{
   text-decoration: none;
 }
 .card-info i{
   position: absolute;
-  margin-left: 450px;
+  font-size: 30px;
+  right: 16px;
+  top:50%;
+  transform:translateY(-50%)
 }
 .card-info h3,p {
-  margin: 5px;
+  margin: -4px;
+  padding: 8px;
 }
-.card-info p{
 
-}
-  .card{
+   .card{
   height: 315px;
   flex-grow: 20px;
   width: 500px;
 box-shadow: 0px 4px 15px 0px #0000001A;
-border-radius: 15px;
+border-radius: 15px; 
 /* flex-grow: 1; */
-
-}  
+}
+.card-info .fa-regular{
+  font-weight: lighter;
+}
+.card-info .fa-solid{
+  color:transparent;
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+}
+.card-info:hover .fa-solid{
+  opacity: 1;
+}
 .menus h2{
   margin-bottom: 30px;
   padding: 20px 0;
@@ -182,6 +204,24 @@ border-radius: 15px;
   align-items: center;
 }
 
+/* Footer */
 
-
- 
+footer{
+  margin-top: 20px;
+  background-color: #353535;
+  display: flex;
+}
+footer h2{
+  font-family:'Shrikhand', cursive;
+  color: #ffffff;
+  font-weight: 400;
+}
+footer p{
+  color: white;
+  justify-content: space-between;
+  height: 114px;
+ border-top-width:  65px;
+}
+ p i{
+  justify-content: space-between;
+}
