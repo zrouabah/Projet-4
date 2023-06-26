@@ -106,7 +106,6 @@ ol{
       padding: 10px;
       width: 100%;
     }
-  
    .card{
     width: 100%;
    }
@@ -119,7 +118,14 @@ ol{
       height: 189px;
       height: 186px;      
       padding: 22px 25px 22px 25px;
-
+    }
+    footer p h2{
+     margin-top: 0;
+    }
+    /* menu1 */
+    header img{
+      width: 375px;
+      height: 216px;
     }
  }
 /*************** menus************/
@@ -175,7 +181,6 @@ a{
   margin: -4px;
   padding: 8px;
 }
-
    .card{
   height: 315px;
   flex-grow: 20px;
@@ -206,22 +211,23 @@ border-radius: 15px;
 
 /* Footer */
 
-footer{
+footer {
   margin-top: 20px;
   background-color: #353535;
   display: flex;
+  padding: 16px 30px;
+  
 }
 footer h2{
   font-family:'Shrikhand', cursive;
   color: #ffffff;
   font-weight: 400;
+  padding: 0 16px;
 }
 footer p{
   color: white;
-  justify-content: space-between;
   height: 114px;
  border-top-width:  65px;
-}
- p i{
-  justify-content: space-between;
+ padding-left: 20px;
+
 }

@@ -1,0 +1,24 @@
+/****************** Menu1 ***********************/
+header img{
+    width: 1440px;
+   object-fit:cover ;
+   height: 960px;
+   
+  }
+  main .menu-liste{
+    background-color: #F6F6F6;
+    height: 1220px;
+    border-radius: 35px;
+    margin: 0 350px 0 350px;
+    position: relative;
+  }
+  .menu-liste h3{
+    font-family:Shrikhand;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: left;
+  
+  }
