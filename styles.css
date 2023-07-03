@@ -248,3 +248,7 @@ footer h2{
   align-items: center;
   gap:20px;
 }
+.pied-de-page p{
+  display: flex;
+gap:10px
+}
