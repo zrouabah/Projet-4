@@ -5,6 +5,11 @@ header img{
    height: 960px;
    
   }
+  header{
+    font-family:'Shrikhand', cursive;
+    font-size:xx-large;
+    text-align: center;
+  }
   main .menu-liste{
     background-color: #F6F6F6;
     height: 1220px;
@@ -20,5 +25,78 @@ header img{
     line-height: 41px;
     letter-spacing: 0em;
     text-align: left;
-  
   }
+  .card-info i{
+    position: absolute;
+    font-size: 30px;
+    right: 16px;
+  }
+  .card-info .fa-regular{
+    font-weight: lighter;
+  }
+  .card-info .fa-solid{
+    color:transparent;
+    background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+  }
+  .card-info:hover .fa-solid{
+    opacity: 1;
+  }
+
+
+/****************** Mdiaqueries **********************/
+@media (max-width:768px) {
+
+  footer {
+    height: 186px;
+  }
+  .pied-de-page p{
+    padding: 0;
+    width: 100%;
+  }
+  .pied-de-page {
+    flex-direction: column;
+    margin-top: 25px;
+    margin: 0;
+    padding: 0 16px;
+    padding-top: 60px;
+    width: 100%;
+  }
+
+ footer h2{
+  display: flex;
+  margin: 0;
+  left: 0;
+  top:0;
+  padding: 0 16px;
+  padding-top: 20px;
+ }
+
+}
+
+  /* Footer */
+
+  footer {
+    background-color: #353535;
+    height: 186px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+  footer h2{
+    font-family:'Shrikhand', cursive;
+    color: #ffffff;
+    font-weight: 400;
+    position: absolute;
+    right: 50px;
+  }
+  .pied-de-page{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap:20px;
+  }
+  

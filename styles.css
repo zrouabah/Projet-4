@@ -112,16 +112,31 @@ ol{
     .card-info i{
       display: flex;
     }
-    footer{
-      display: flex;
+    footer {
+      height: 186px;
+    }
+    .pied-de-page p{
+      padding: 0;
+      width: 100%;
+    }
+    .pied-de-page {
       flex-direction: column;
-      height: 189px;
-      height: 186px;      
-      padding: 22px 25px 22px 25px;
+      margin-top: 25px;
+      margin: 0;
+      padding: 0 16px;
+      padding-top: 60px;
+      width: 100%;
     }
-    footer p h2{
-     margin-top: 0;
-    }
+
+   footer h2{
+    display: flex;
+    margin: 0;
+    left: 0;
+    top:0;
+    padding: 0 16px;
+    padding-top: 20px;
+   }
+
     /* menu1 */
     header img{
       width: 375px;
@@ -133,6 +148,7 @@ ol{
   background-color: #F6F6F6;
   justify-content: center;
   align-items: center;
+  
 }
  .menu-cards {
   display:flex;
@@ -212,22 +228,23 @@ border-radius: 15px;
 /* Footer */
 
 footer {
-  margin-top: 20px;
   background-color: #353535;
+  height: 186px;
   display: flex;
-  padding: 16px 30px;
-  
+  position: relative;
+  align-items: center;
+  justify-content: center;
 }
 footer h2{
   font-family:'Shrikhand', cursive;
   color: #ffffff;
   font-weight: 400;
-  padding: 0 16px;
+  position: absolute;
+  right: 50px;
 }
-footer p{
+.pied-de-page{
   color: white;
-  height: 114px;
- border-top-width:  65px;
- padding-left: 20px;
-
+  display: flex;
+  align-items: center;
+  gap:20px;
 }
