@@ -1,94 +1,113 @@
 /****************** Menu1 ***********************/
-body{
+body {
   margin: 0px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-header img{
+header img {
   display: block;
   width: 100%;
-   object-fit:cover ;
-   background-size: cover;
-   height: 275px;
-  }
-  header{
-    font-family:'Shrikhand', cursive;
-    font-size:xx-large;
-    text-align: center;
-  }
-  main{
-    background: #F6F6F6;
-    margin: 0 200px;
-  }
-  main h2{
-    font-family: 'shrikhand', cursive;
-    position: relative;
-    font-size: 28px;
-    font-style: italic;
-    font-weight: 400;
-    padding: 30px 15px;
-    /* line-height: 120px; */
-    background: #F6F6F6;
-    border-radius: 20px 20px 0 0;
-    text-align: center;
-  }
-  .menu-liste{
-    margin-top: -50px;
-    background: white;
-    position: relative;
-  }
-  main .menu-liste{
-     background-color: #F6F6F6;
-    /* height: 1220px; */
-    border-radius: 35px 35px 0 0; 
-    background: white
-  }
-  .card-info{
-    text-decoration: none;
-    color: black;
-    position: relative;
-  }
-  a{
-    text-decoration: none;
-  }
-  
-  .card-info i{
-    position: absolute;
-    font-size: 30px;
-    right: 50px;
-    top:50%;
-    margin-top: -85px;
-    /* transform:translateY(-300%); */
-  }
-  /* .card-info h2,p {
+  object-fit: cover;
+  background-size: cover;
+  height: 275px;
+}
+header {
+  font-family: "Shrikhand", cursive;
+  font-size: xx-large;
+  text-align: center;
+}
+.arrowLeft{
+  display: inline-block;
+  justify-content: flex-end;
+  left: 30px;
+  padding: 20px 0 20px 0;
+}
+.fa-arrow-left{
+  position: absolute;
+  left: 30px;
+  font-size: medium;
+  top:30px; 
+}
+main {
+  background: #f6f6f6;
+  margin: 0 200px;
+}
+main h2 {
+  font-family: "shrikhand", cursive;
+  position: relative;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  padding: 30px 15px;
+  /* line-height: 120px; */
+  background: #f6f6f6;
+  border-radius: 20px 20px 0 0;
+  text-align: center;
+}
+.menu-liste {
+  margin-top: -50px;
+  background: white;
+  position: relative;
+}
+main .menu-liste {
+  background-color: #f6f6f6;
+  /* height: 1220px; */
+  border-radius: 35px 35px 0 0;
+  background: white;
+}
+.card-info {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+
+.card-info i {
+  position: absolute;
+  font-size: 30px;
+  right: 50px;
+  top: 50%;
+  margin-top: -85px;
+  /* transform:translateY(-300%); */
+}
+/* .card-info h2,p {
     margin: -4px;
     padding: 8px;
   }  */
-  
-  card-info .fa-regular{
-    font-weight: lighter;
-  }
-  .card-info .fa-solid{
-    color:transparent;
-    background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  .card-info .fa-solid {
+    color: transparent;
+    background-image: linear-gradient(
+      193.33deg,
+      #9356dc -11.44%,
+      #ff79da 123.93%
+    );
     background-clip: text;
     -webkit-background-clip: text;
     opacity: 0;
   }
-  .card-info:hover .fa-solid{
-    opacity: 1;
-    }
+card-info .fa-regular {
+  font-weight: lighter;
+  background-image: linear-gradient(193.33deg,#9356dc -11.44%,#ff79da 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+}
+.card-info:hover .fa-solid {
+  opacity: 1;
+}
 .fa-solid {
   font-weight: 900;
 }
 /*************file menu*****************/
 
 .file-menu {
-display: grid;
-gap: 20px;
-width: 100%;
-justify-content: center;
+  display: grid;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
 }
-.menu-grid{
+.menu-grid {
   background: white;
   border-radius: 15px;
   display: flex;
@@ -96,19 +115,19 @@ justify-content: center;
   height: 70px;
   width: 600px;
 }
- h3{
-  border-bottom: 3px solid #99E2D0;
+h3 {
+  border-bottom: 3px solid #99e2d0;
   width: 40px;
 }
-h4  {
+h4 {
   margin: 0;
   padding: 0;
   margin-top: 10px;
 }
- p{
+p {
   margin: 0;
 }
-.file-menu h3{
+.file-menu h3 {
   margin: 0;
 }
 .prix {
@@ -118,34 +137,33 @@ h4  {
   font-weight: 900;
 }
 /**************COMMANDER****************/
-.file-menu button{
- background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+.file-menu button {
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   width: 186px;
   border-radius: 25px;
   height: 50px;
   color: white;
- text-align: center;
- margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
-.commander{
+.commander {
   text-align: center;
 }
 /****************** Mdiaqueries **********************/
-@media (max-width:768px) {
-
-  main{
+@media (max-width: 768px) {
+  main {
     margin: 0;
   }
-  .menu-grid{
+  .menu-grid {
     width: 350px;
   }
-  main h2{
+  main h2 {
     text-align: left;
   }
   footer {
     height: 186px;
   }
-  .pied-de-page p{
+  .pied-de-page p {
     padding: 0;
     width: 100%;
   }
@@ -158,45 +176,44 @@ h4  {
     width: 100%;
   }
 
- footer h2{
-  display: flex;
-  margin: 0;
-  left: 0;
-  top:0;
-  padding: 0 16px;
-  padding-top: 20px;
- }
-
+  footer h2 {
+    display: flex;
+    margin: 0;
+    left: 0;
+    top: 0;
+    padding: 0 16px;
+    padding-top: 20px;
+  }
 }
-  /* Footer */
-  Footer p{
-    margin: -4px;
-  }
-  footer {
-    background-color: #353535;
-    height: 186px;
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-  }
-  footer h2{
-    font-family:'Shrikhand', cursive;
-    color: #ffffff;
-    font-weight: 400;
-    position: absolute;
-    right: 50px;
-  }
-  .pied-de-page{
-    color: white;
-    display: flex;
-    align-items: center;
-    gap:20px;
-  }
-  .pied-de-page p{
-    display: flex;
-  gap:10px
-  }
-  footer a {
-    color: white;
-  }
+/* Footer */
+Footer p {
+  margin: -4px;
+}
+footer {
+  background-color: #353535;
+  height: 186px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+footer h2 {
+  font-family: "Shrikhand", cursive;
+  color: #ffffff;
+  font-weight: 400;
+  position: absolute;
+  right: 50px;
+}
+.pied-de-page {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.pied-de-page p {
+  display: flex;
+  gap: 10px;
+}
+footer a {
+  color: white;
+}
