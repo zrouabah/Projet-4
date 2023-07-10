@@ -15,6 +15,10 @@ header img{
     font-size:xx-large;
     text-align: center;
   }
+  main{
+    background: #F6F6F6;
+    margin: 0 200px;
+  }
   main h2{
     font-family: 'shrikhand', cursive;
     position: relative;
@@ -23,6 +27,9 @@ header img{
     font-weight: 400;
     padding: 30px 15px;
     /* line-height: 120px; */
+    background: #F6F6F6;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
   }
   .menu-liste{
     margin-top: -50px;
@@ -47,15 +54,15 @@ header img{
   .card-info i{
     position: absolute;
     font-size: 30px;
-    right: 16px;
+    right: 50px;
     top:50%;
-    margin-top: -80px;
+    margin-top: -85px;
     /* transform:translateY(-300%); */
   }
-  .card-info h2,p {
+  /* .card-info h2,p {
     margin: -4px;
     padding: 8px;
-  }
+  }  */
   
   card-info .fa-regular{
     font-weight: lighter;
@@ -73,10 +80,68 @@ header img{
 .fa-solid {
   font-weight: 900;
 }
+/*************file menu*****************/
 
+.file-menu {
+display: grid;
+gap: 20px;
+width: 100%;
+justify-content: center;
+}
+.menu-grid{
+  background: white;
+  border-radius: 15px;
+  display: flex;
+  padding: 15px;
+  height: 70px;
+  width: 600px;
+}
+ h3{
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+}
+h4  {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+ p{
+  margin: 0;
+}
+.file-menu h3{
+  margin: 0;
+}
+.prix {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+}
+/**************COMMANDER****************/
+.file-menu button{
+ background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  width: 186px;
+  border-radius: 25px;
+  height: 50px;
+  color: white;
+ text-align: center;
+ margin-bottom: 20px;
+}
+.commander{
+  text-align: center;
+}
 /****************** Mdiaqueries **********************/
 @media (max-width:768px) {
 
+  main{
+    margin: 0;
+  }
+  .menu-grid{
+    width: 350px;
+  }
+  main h2{
+    text-align: left;
+  }
   footer {
     height: 186px;
   }
@@ -103,9 +168,8 @@ header img{
  }
 
 }
-
   /* Footer */
-  p{
+  Footer p{
     margin: -4px;
   }
   footer {
@@ -133,4 +197,6 @@ header img{
     display: flex;
   gap:10px
   }
-  
+  footer a {
+    color: white;
+  }

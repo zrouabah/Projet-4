@@ -252,3 +252,6 @@ footer h2{
   display: flex;
 gap:10px
 }
+footer a {
+  color:white;
+}
