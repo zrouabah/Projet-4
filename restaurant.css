@@ -8,7 +8,7 @@ header img {
   width: 100%;
   object-fit: cover;
   background-size: cover;
-  height: 275px;
+  height: 800px;
 }
 header {
   font-family: "Shrikhand", cursive;
@@ -37,11 +37,12 @@ main h2 {
   font-size: 28px;
   font-style: italic;
   font-weight: 400;
-  padding: 30px 15px;
+  padding: 15px 0 15px 0;
   /* line-height: 120px; */
   background: #f6f6f6;
   border-radius: 20px 20px 0 0;
   text-align: center;
+  margin-bottom: 0;
 }
 .menu-liste {
   margin-top: -50px;
@@ -66,9 +67,8 @@ a {
 .card-info i {
   position: absolute;
   font-size: 30px;
-  right: 50px;
-  top: 50%;
-  margin-top: -85px;
+  right: 345px;
+  
   /* transform:translateY(-300%); */
 }
 /* .card-info h2,p {
@@ -85,6 +85,8 @@ a {
     background-clip: text;
     -webkit-background-clip: text;
     opacity: 0;
+    transition-duration: 1s;
+    top: -55px;
   }
 card-info .fa-regular {
   font-weight: lighter;
@@ -92,28 +94,43 @@ card-info .fa-regular {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
+  
 }
 .card-info:hover .fa-solid {
   opacity: 1;
 }
 .fa-solid {
-  font-weight: 900;
+  font-weight: 0;
+}
+i.fa-regular.fa-heart{
+  top:-55px;
 }
 /*************file menu*****************/
 
 .file-menu {
   display: grid;
   gap: 20px;
-  width: 100%;
-  justify-content: center;
+  margin: 0 130px 0 130px ;
+
 }
 .menu-grid {
   background: white;
-  border-radius: 15px;
   display: flex;
-  padding: 15px;
-  height: 70px;
-  width: 500px;
+  padding-top: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.menu-flex{
+  padding: 10px;
+  padding-top: 0;
+
+}
+.fa-check{
+  color:#99e2d0;
+  background-color: white;
+  border-radius: 50%;
+  
 }
 h3 {
   border-bottom: 3px solid #99e2d0;
@@ -135,7 +152,31 @@ p {
   display: flex;
   align-items: center;
   font-weight: 900;
+  padding: 15px;
+  align-items: flex-end;
 }
+.menu-valider{
+background-color: #99E2D0;
+border-radius: 0 10px 10px 0;
+padding: 15px;
+margin-right: -46px;
+transition: all 1s;
+display: flex;
+align-items: center;
+
+}
+
+.menu-grid:hover .menu-valider {
+  margin-right: 0;
+}
+.menu-flex .text-overflow{
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
 /**************COMMANDER****************/
 .file-menu button {
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
@@ -145,6 +186,7 @@ p {
   color: white;
   text-align: center;
   margin-bottom: 20px;
+  border: none;
 }
 .commander {
   text-align: center;
@@ -154,11 +196,21 @@ p {
   main {
     margin: 0;
   }
+  header img{
+    height: 280px;
+  }
   .menu-grid {
-    width: 300px;
+    width: 100%;
+  }
+  .file-menu{
+    margin: 10px;
   }
   main h2 {
     text-align: left;
+    padding:15px;
+  }
+  .card-info i{
+    right: 15px;
   }
   footer {
     height: 186px;
@@ -181,7 +233,7 @@ p {
     margin: 0;
     left: 0;
     top: 0;
-    padding: 0 16px;
+    padding: 0 15px;
     padding-top: 20px;
   }
 }

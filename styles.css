@@ -43,12 +43,21 @@ main .ville i {
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   border-radius: 25px;
   align-items: center;
-  height: 50px;
+  height: 40px;
   top: 50px;
   font-size: 15px;
+  border:none;
+  padding: 0 10px 0 10px;
+  margin-top: 20px;
 }
 
 /* Fonctionnement */
+.foncPropo{
+  display: grid;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
 ol.Fonctionnement {
   display: flex;
   flex-wrap: wrap;
@@ -61,7 +70,7 @@ li {
   padding: 20px;
   border-radius: 20px;
   position: relative;
-  width:290px ;
+  width: 268px;
 }
 ol {
   list-style-type: none;
@@ -101,27 +110,28 @@ ol li::before {
     gap: 25px;
     padding: 0;
   }
+  li{
+    width: 320px;
+  }
   .foncPropo{
-    padding: 15px 30px;
-  }
-  .menu-cards {
+    display: flex;
     flex-direction: column;
+    width: 87%;
   }
-  .menu-cards .card {
-    width: 95%;
+ 
+   .menus-container h2 {
+    display: grid;
+    margin: auto;
+    padding: 20px 0;
   }
-   .menus h2 {
-    padding: 0;
-    padding-top: 25px;
-    padding-bottom: 25px;
+
+   .menus-container{ 
+    width: auto;
   }
-  .menus {
-    padding: 10px;
-    width: 100%;
-  }
-  .card {
-    width: 100%;
-  }
+  
+.menu-cards{
+  width: 100%;
+}
   .card-info i {
     display: flex;
   }
@@ -171,6 +181,18 @@ ol li::before {
 .menus .menu-cards .cardNouveau {
   position: relative;
 }
+.menus-container{
+  width: 80%;
+  margin: auto;
+  display: grid;
+  justify-content: center;
+}
+.menus-container h2{
+  display: grid;
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+}
 .menus .menu-cards .cardNouveau::before {
   content: "Nouveau";
   height: 23px;
@@ -179,8 +201,8 @@ ol li::before {
   color: #008766;
   position: absolute;
   text-align: center;
-  margin-top: 10px;
-  right: 50px;
+  top: 10px;
+  right: 40px;
 }
 .menus img {
   object-fit: cover;
@@ -212,7 +234,7 @@ p {
 .card {
   height: 315px;
   flex-grow: 20px;
-  width: 500px;
+  width: 476px;
   box-shadow: 0px 4px 15px 0px #0000001a;
   border-radius: 15px;
   /* flex-grow: 1; */
@@ -230,15 +252,12 @@ p {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
+  transition-duration: 1s;
 }
 .card-info:hover .fa-solid {
   opacity: 1;
 }
-.menus h2 {
-  margin-bottom: 30px;
-  margin: 0;
-  /* padding: 25px 250px; */
-  }
+
 
 /* Footer */
 
