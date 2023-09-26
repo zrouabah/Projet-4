@@ -169,12 +169,7 @@ align-items: center;
 .menu-grid:hover .menu-valider {
   margin-right: 0;
 }
-.menu-flex .text-overflow{
-  width: 200px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+
 
 
 /**************COMMANDER****************/
