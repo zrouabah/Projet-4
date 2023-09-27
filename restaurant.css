@@ -169,7 +169,11 @@ align-items: center;
 .menu-grid:hover .menu-valider {
   margin-right: 0;
 }
-
+h4{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 
 /**************COMMANDER****************/
