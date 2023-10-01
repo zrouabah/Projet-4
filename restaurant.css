@@ -15,17 +15,17 @@ header {
   font-size: xx-large;
   text-align: center;
 }
-.arrowLeft{
+.arrowLeft {
   display: inline-block;
   justify-content: flex-end;
   left: 30px;
   padding: 20px 0 20px 0;
 }
-.fa-arrow-left{
+.fa-arrow-left {
   position: absolute;
   left: 30px;
   font-size: medium;
-  top:30px; 
+  top: 30px;
 }
 main {
   background: #f6f6f6;
@@ -68,33 +68,36 @@ a {
   position: absolute;
   font-size: 30px;
   right: 345px;
-  
+
   /* transform:translateY(-300%); */
 }
 /* .card-info h2,p {
     margin: -4px;
     padding: 8px;
   }  */
-  .card-info .fa-solid {
-    color: transparent;
-    background-image: linear-gradient(
-      193.33deg,
-      #9356dc -11.44%,
-      #ff79da 123.93%
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    opacity: 0;
-    transition-duration: 1s;
-    top: -55px;
-  }
-card-info .fa-regular {
-  font-weight: lighter;
-  background-image: linear-gradient(193.33deg,#9356dc -11.44%,#ff79da 123.93%);
+.card-info .fa-solid {
+  color: transparent;
+  background-image: linear-gradient(
+    193.33deg,
+    #9356dc -11.44%,
+    #ff79da 123.93%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
-  
+  transition-duration: 1s;
+  top: -55px;
+}
+card-info .fa-regular {
+  font-weight: lighter;
+  background-image: linear-gradient(
+    193.33deg,
+    #9356dc -11.44%,
+    #ff79da 123.93%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
 }
 .card-info:hover .fa-solid {
   opacity: 1;
@@ -102,35 +105,32 @@ card-info .fa-regular {
 .fa-solid {
   font-weight: 0;
 }
-i.fa-regular.fa-heart{
-  top:-55px;
+i.fa-regular.fa-heart {
+  top: -55px;
 }
 /*************file menu*****************/
 
 .file-menu {
   display: grid;
   gap: 20px;
-  margin: 0 130px 0 130px ;
-
+  margin: 0 130px 0 130px;
 }
 .menu-grid {
   background: white;
   display: flex;
-  padding-top: 0;
   border-radius: 15px;
   overflow: hidden;
-  margin-top: 20px;
+  width: 100%;
 }
-.menu-flex{
+.menu-flex {
+  width: 80%;
   padding: 10px;
   padding-top: 0;
-
 }
-.fa-check{
-  color:#99e2d0;
+.fa-check {
+  color: #99e2d0;
   background-color: white;
   border-radius: 50%;
-  
 }
 h3 {
   border-bottom: 3px solid #99e2d0;
@@ -148,33 +148,41 @@ p {
   margin: 0;
 }
 .prix {
-  margin-left: auto;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-weight: 900;
+  padding: 10px;
+}
+.test {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-valider {
+  background-color: #99e2d0;
+  width: 0;
+  transition: all 1s;
   display: flex;
   align-items: center;
-  font-weight: 900;
-  padding: 15px;
-  align-items: flex-end;
-}
-.menu-valider{
-background-color: #99E2D0;
-border-radius: 0 10px 10px 0;
-padding: 15px;
-margin-right: -46px;
-transition: all 1s;
-display: flex;
-align-items: center;
-
+  justify-content: center;
+  margin-right: -10px;
 }
 
 .menu-grid:hover .menu-valider {
-  margin-right: 0;
+  width: 20%;
 }
-h4{
+
+h4 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
+p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 /**************COMMANDER****************/
 .file-menu button {
@@ -195,20 +203,20 @@ h4{
   main {
     margin: 0;
   }
-  header img{
+  header img {
     height: 280px;
   }
   .menu-grid {
     width: 100%;
   }
-  .file-menu{
+  .file-menu {
     margin: 10px;
   }
   main h2 {
     text-align: left;
-    padding:15px;
+    padding: 15px;
   }
-  .card-info i{
+  .card-info i {
     right: 15px;
   }
   footer {
@@ -226,7 +234,14 @@ h4{
     padding-top: 60px;
     width: 100%;
   }
-
+  .menus-container {
+    width: 80%;
+    margin: 0;
+  }
+  .menus-container h2 {
+    width: auto;
+    display: block;
+  }
   footer h2 {
     display: flex;
     margin: 0;
