@@ -126,6 +126,7 @@ i.fa-regular.fa-heart {
   width: 80%;
   padding: 10px;
   padding-top: 0;
+  transition: all 1s;
 }
 .fa-check {
   color: #99e2d0;
@@ -171,8 +172,11 @@ p {
 
 .menu-grid:hover .menu-valider {
   width: 20%;
+  
 }
-
+.menu-grid:hover .menu-flex{
+  width: 60%;
+}
 h4 {
   white-space: nowrap;
   overflow: hidden;
