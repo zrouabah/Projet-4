@@ -1,10 +1,12 @@
+/************* Styles.scss*************/
+/*************************Restaurant.scss***********************/
+/************* Styles.scss*************/
+/*************************Restaurant.scss***********************/
 body {
-  margin:0px;
+  margin: 0px;
   font-family: "Roboto", sans-serif;
 }
-/* main{
-    padding: 0 100px;
-  } */
+
 header {
   font-family: "Shrikhand", cursive;
   font-size: xx-large;
@@ -13,8 +15,9 @@ header {
   padding: 20px;
   position: relative;
 }
+
 /* Nav */
-main .ville {
+.ville {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,9 +27,10 @@ main .ville {
   padding: 20px;
   margin: 0;
 }
-main .ville i {
+.ville i {
   font-size: 20px;
 }
+
 /* Explorer */
 .Explorer {
   text-align: center;
@@ -46,22 +50,42 @@ main .ville i {
   height: 40px;
   top: 50px;
   font-size: 15px;
-  border:none;
+  border: none;
   padding: 0 10px 0 10px;
   margin-top: 20px;
+  transition: transform 200ms;
+}
+.Explorer button:hover {
+  transform: scale(1.2);
+  opacity: 0.9;
 }
 
 /* Fonctionnement */
-.foncPropo{
+.foncPropo {
   width: 75%;
   margin: auto;
 }
+@media (max-width: 768px) {
+  .foncPropo {
+    display: flex;
+    flex-direction: column;
+    width: 87%;
+  }
+}
+
 ol.Fonctionnement {
   display: flex;
   flex-direction: row;
   gap: 25px;
   padding: 0;
 }
+@media (max-width: 768px) {
+  ol.Fonctionnement {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 li {
   background-color: #f6f6f6;
   padding: 20px;
@@ -69,6 +93,7 @@ li {
   position: relative;
   width: 476px;
 }
+
 ol {
   list-style-type: none;
   counter-reset: compteur;
@@ -85,12 +110,13 @@ ol li::before {
   width: 25px;
   height: 25px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   position: absolute;
   bottom: 15px;
   left: -16px;
 }
+
 .Fonctionnement i {
   margin-right: 6px;
 }
@@ -98,28 +124,43 @@ ol li::before {
 /*************** menus************/
 .menus {
   background-color: #f6f6f6;
-  justify-content: center;
-  align-items: center;
   padding-bottom: 60px;
 }
-.menu-cards {
+.menus .card {
+  height: 350px;
+  flex-grow: 20px;
+  width: 476px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 15px;
+  flex-grow: 1;
+}
+@media (max-width: 768px) {
+  .menus .card {
+    height: 250px;
+  }
+}
+.menus img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  height: 270px;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+@media (max-width: 768px) {
+  .menus img {
+    height: 170px;
+  }
+}
+.menus .menu__cards {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
 }
-.menus .menu-cards .cardNouveau {
+.menus .menu__cards .cardNouveau {
   position: relative;
 }
-.menus-container{
-  width: 75%;
-  margin: auto;
-
-}
-.menus-container h2{
-  padding: 20px 0;
-}
-.menus .menu-cards .cardNouveau::before {
+.menus .menu__cards .cardNouveau::before {
   content: "Nouveau";
   height: 23px;
   width: 75px;
@@ -130,104 +171,78 @@ ol li::before {
   top: 10px;
   right: 40px;
 }
-.menus img {
-  object-fit: cover;
-  background-size: cover;
-  height: 270px;
-  width: 100%;
-  border-radius: 15px 15px 0 0;
+
+.menus-container {
+  width: 75%;
+  margin: auto;
 }
-.card-info {
+@media (max-width: 768px) {
+  .menus-container {
+    width: 87%;
+  }
+}
+.menus-container h2 {
+  padding: 20px 0;
+}
+@media (max-width: 768px) {
+  .menus-container h2 {
+    margin: auto;
+  }
+}
+
+.card__info {
   text-decoration: none;
-  color: black;
+  color: #353535;
   position: relative;
 }
-a {
-  text-decoration: none;
+.card__info h3, .card__info p {
+  margin: -4px;
+  padding: 8px;
 }
-.card-info i {
+.card__info i {
   position: absolute;
   font-size: 30px;
   right: 16px;
   top: 50%;
   transform: translateY(-50%);
 }
-.card-info h3,
-p {
-  margin: -4px;
-  padding: 8px;
-}
-.card {
-  height: 350px;
-  flex-grow: 20px;
-  width: 476px;
-  box-shadow: 0px 4px 15px 0px #0000001a;
-  border-radius: 15px;
-  flex-grow: 1;
-}
-.card-info .fa-regular {
+.card__info.fa-regular {
   font-weight: lighter;
 }
-.card-info .fa-solid {
+
+a {
+  text-decoration: none;
+}
+
+.heart .fa-solid {
   color: transparent;
-  background-image: linear-gradient(
-    193.33deg,
-    #9356dc -11.44%,
-    #ff79da 123.93%
-  );
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
   transition-duration: 1s;
 }
-.card-info:hover .fa-solid {
+.heart .fa-solid:hover {
   opacity: 1;
 }
 
-/* Mdiaqueries */
-@media (max-width: 768px) {
- 
-  ol.Fonctionnement {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .foncPropo{
-    display: flex;
-    flex-direction: column;
-    width: 87%;
-  }
-  .menus-container{
-    width: 87%;
-  }
-   .menus-container h2 {
-    margin: auto;
-  }
-  .menus img{
-    height: 170px;
-  }
-
-.card{
-  height: 250px;
+/* Footer */
+footer {
+  background-color: #353535;
+  height: 186px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
-  .card-info i {
-    display: flex;
-  }
-  footer {
-    height: 186px;
-  }
-  .pied-de-page p {
-    padding: 0;
-    width: 100%;
-  }
-  .pied-de-page {
-    flex-direction: column;
-    margin-top: 25px;
-    margin: 0;
-    padding: 0 16px;
-    padding-top: 60px;
-    width: 100%;
-  }
-
+footer h2 {
+  font-family: "Shrikhand", cursive;
+  color: white;
+  font-weight: 400;
+  position: absolute;
+  right: 50px;
+}
+@media (max-width: 768px) {
   footer h2 {
     display: flex;
     margin: 0;
@@ -236,36 +251,39 @@ p {
     padding: 0 16px;
     padding-top: 20px;
   }
-
+}
+@media (max-width: 768px) {
+  footer {
+    height: auto;
+  }
 }
 
-/* Footer */
-
-footer {
-  background-color: #353535;
-  height: 186px;
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-}
-footer h2 {
-  font-family: "Shrikhand", cursive;
-  color: #ffffff;
-  font-weight: 400;
-  position: absolute;
-  right: 50px;
-}
-.pied-de-page {
+.pied__page {
   color: white;
   display: flex;
-  align-items: center;
   gap: 20px;
 }
-.pied-de-page p {
-  display: flex;
+.pied__page p {
   gap: 10px;
+  display: flex;
 }
+@media (max-width: 768px) {
+  .pied__page p {
+    padding: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .pied__page {
+    display: block;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 16px;
+    padding-top: 60px;
+    width: 100%;
+  }
+}
+
 footer a {
   color: white;
-}
+}/*# sourceMappingURL=styles.css.map */

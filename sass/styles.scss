@@ -1,0 +1,228 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+
+body {
+  margin:0px;
+  @include font-family-Roboto;
+}
+
+header {
+  @include font-family-Shrikand;
+  font-size: xx-large;
+  text-align: center;
+  box-shadow: 0 0 0.5rem grey;
+  padding: 20px;
+  position: relative;
+}
+/* Nav */
+.ville {
+  @include display-center;
+  gap: 20px;
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  & i {
+  font-size: 20px;
+
+  }
+}
+/* Explorer */
+.Explorer {
+  text-align: center;
+  & h2 {
+  font-size: 1.5rem;
+  margin-top: 40px;
+}
+  & p {
+  font-size: 1rem;
+}
+  & button {
+  color: white;
+  @include background-Lgradien;
+  border-radius: 25px;
+  align-items: center;
+  height: 40px;
+  top: 50px;
+  font-size: 15px;
+  border:none;
+  padding: 0 10px 0 10px;
+  margin-top: 20px;
+  transition: transform 200ms;
+}
+  & button:hover{
+ @include transform;
+}
+}
+/* Fonctionnement */
+.foncPropo{
+    @include element-center;
+    @media (max-width: 768px){
+      @include display-column;
+    width: 87%;  
+    }
+}
+ol.Fonctionnement {
+  @include display-row;
+  gap: 25px;
+  padding: 0;
+  @media (max-width: 768px){
+    @include display-wrap
+  }
+}
+li {
+  @include backround-grey;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  width: 476px;
+}
+ol {
+  list-style-type: none;
+  counter-reset: compteur;
+  & li {
+  counter-increment: compteur;
+  }
+  & li::before {
+  @include liste-fonctionement
+}
+}
+.Fonctionnement i {
+  margin-right: 6px;
+}
+
+/*************** menus************/
+.menus {
+ @include backround-grey;
+  padding-bottom: 60px;
+  .card {
+    height: 350px;
+    flex-grow: 20px;
+    width: 476px;
+    box-shadow: 0px 4px 15px 0px #0000001a;
+    border-radius: 15px;
+    flex-grow: 1;
+    @media (max-width: 768px){
+        height: 250px;
+    }
+  
+  }
+  img {
+    object-fit: cover;
+    background-size: cover;
+    height: 270px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    @media (max-width: 768px){
+      height: 170px;
+    }
+  }
+  .menu__cards {
+  @include display-wrap;
+    gap: 30px;
+    .cardNouveau {
+      position: relative;
+      &::before {
+        @include badge-noveau;
+      }
+    }  
+  }
+}
+.menus-container{
+ @include element-center;  
+@media (max-width: 768px) {
+    width: 87%;
+}
+& h2{
+  padding: 20px 0;
+  @media (max-width: 768px){
+    margin: auto;
+  }  
+  }
+}
+
+.card__info {
+  text-decoration: none;
+  @include color-black;
+  position: relative;
+    h3,p {
+      margin: -4px;
+      padding: 8px;
+     }
+    i {
+  position: absolute;
+  font-size: 30px;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  }
+  &.fa-regular {
+  font-weight: lighter;
+}
+}
+ a {
+  text-decoration: none;
+    } 
+  .heart .fa-solid{
+    color: transparent;
+  @include background-Lgradien;
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition-duration: 1s;
+  &:hover  {
+    opacity: 1;
+  }
+ }
+
+/* Footer */
+
+footer {
+  @include background-black;
+  height: 186px;
+  @include display-center;
+  position: relative;
+     h2 {
+      @include font-family-Shrikand;
+      @include color-white;
+      font-weight: 400;
+      position: absolute;
+      right: 50px;
+      @media (max-width: 768px){
+        display: flex;
+        margin: 0;
+        left: 0;
+        top: 0;
+        padding: 0 16px;
+        padding-top: 20px;
+      }
+}
+@media (max-width: 768px){
+  height: auto;
+}
+}
+.pied__page {
+  @include color-white;
+  display: flex;
+  gap: 20px;
+    p {
+      gap: 10px;
+      display: flex;
+      @media (max-width: 768px){
+        padding: 0;
+        width: 100%;
+      }
+    }
+@media (max-width: 768px){
+  display: block;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 16px;
+  padding-top: 60px;
+  width: 100%;
+}
+}
+footer a {
+  @include color-white;
+}
