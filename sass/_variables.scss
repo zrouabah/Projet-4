@@ -1,0 +1,25 @@
+/************* Styles.scss*************/
+
+@mixin background-Lgradien{
+    background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+}
+@mixin backround-grey {
+    background-color: #f6f6f6;
+}
+@mixin background-black{
+    background-color: #353535;
+    
+}
+@mixin color-white{
+    color: white;
+}
+@mixin color-black{
+    color: #353535;
+}
+@mixin color-green{
+    color: #99e2d0;
+}
+/*************************Restaurant.scss***********************/
+@mixin background-white{
+    background: white;
+}
