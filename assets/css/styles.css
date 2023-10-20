@@ -32,17 +32,17 @@ header {
 }
 
 /* Explorer */
-.Explorer {
+.explorer {
   text-align: center;
 }
-.Explorer h2 {
+.explorer h2 {
   font-size: 1.5rem;
   margin-top: 40px;
 }
-.Explorer p {
+.explorer p {
   font-size: 1rem;
 }
-.Explorer button {
+.explorer button {
   color: white;
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   border-radius: 25px;
@@ -55,7 +55,7 @@ header {
   margin-top: 20px;
   transition: transform 200ms;
 }
-.Explorer button:hover {
+.explorer button:hover {
   transform: scale(1.2);
   opacity: 0.9;
 }
@@ -73,14 +73,14 @@ header {
   }
 }
 
-ol.Fonctionnement {
+ol.fonctionnement {
   display: flex;
   flex-direction: row;
   gap: 25px;
   padding: 0;
 }
 @media (max-width: 768px) {
-  ol.Fonctionnement {
+  ol.fonctionnement {
     display: flex;
     flex-wrap: wrap;
   }
@@ -117,7 +117,7 @@ ol li::before {
   left: -16px;
 }
 
-.Fonctionnement i {
+.fonctionnement i {
   margin-right: 6px;
 }
 

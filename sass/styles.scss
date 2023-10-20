@@ -29,41 +29,41 @@ header {
   }
 }
 /* Explorer */
-.Explorer {
+.explorer {
   text-align: center;
-  & h2 {
-  font-size: 1.5rem;
-  margin-top: 40px;
-}
-  & p {
-  font-size: 1rem;
-}
-  & button {
-  color: white;
-  @include background-Lgradien;
-  border-radius: 25px;
-  align-items: center;
-  height: 40px;
-  top: 50px;
-  font-size: 15px;
-  border:none;
-  padding: 0 10px 0 10px;
-  margin-top: 20px;
-  transition: transform 200ms;
-}
-  & button:hover{
- @include transform;
-}
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 40px;
+  } 
+  p {
+    font-size: 1rem;
+  }
+  button {
+    color: white;
+    @include background-Lgradien;
+    border-radius: 25px;
+    align-items: center;
+    height: 40px;
+    top: 50px;
+    font-size: 15px;
+    border:none;
+    padding: 0 10px 0 10px;
+    margin-top: 20px;
+    transition: transform 200ms;
+    &:hover{
+      @include transform;
+    }
+  }
 }
 /* Fonctionnement */
 .foncPropo{
-    @include element-center;
-    @media (max-width: 768px){
-      @include display-column;
+  @include element-center;
+  @media (max-width: 768px){
+    @include display-column;
     width: 87%;  
-    }
+  }
 }
-ol.Fonctionnement {
+ol.fonctionnement {
   @include display-row;
   gap: 25px;
   padding: 0;
@@ -88,7 +88,7 @@ ol {
   @include liste-fonctionement
 }
 }
-.Fonctionnement i {
+.fonctionnement i {
   margin-right: 6px;
 }
 
