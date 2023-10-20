@@ -141,7 +141,7 @@ ol li::before {
 }
 .menus img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   background-size: cover;
   height: 270px;
   width: 100%;
@@ -195,7 +195,8 @@ ol li::before {
   color: #353535;
   position: relative;
 }
-.card__info h3, .card__info p {
+.card__info h3,
+.card__info p {
   margin: -4px;
   padding: 8px;
 }
@@ -286,4 +287,4 @@ footer h2 {
 
 footer a {
   color: white;
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */
